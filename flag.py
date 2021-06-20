@@ -34,10 +34,10 @@ yellow_pos=turtle.pos()
 turtle.color("yellow")
 turtle.begin_fill()
 turtle.setheading(0)
-turtle.right(30)
-turtle.fd(15)
+turtle.right(15)
+turtle.fd(35)
 turtle.setheading(180)
-turtle.fd(26)
+turtle.fd(70)
 turtle.setpos(yellow_pos)
 list2=turtle.pos()
 angle=0
@@ -46,9 +46,9 @@ i=20
 j=0
 k=0
 turtle.setheading(0)
-turtle.circle(70)
+#turtle.circle(70)
 
-while(j<7):
+while(j<8):
 	
 	list=list2
 	turtle.setheading(angle)
@@ -63,7 +63,7 @@ while(j<7):
 	turtle.setpos(list)
 	angle+=17
 	turtle.end_fill()
-	turtle.dot("black")
+	#turtle.dot("black")
 	j+=1
 	k+=3
 
@@ -72,10 +72,10 @@ turtle.color("red")
 turtle.setpos(yellow_pos)
 turtle.color("yellow")
 list2=turtle.pos()
-i=10
+i=20
 j=0
 
-while(j<7):
+while(j<8):
 	
 	list=list2
 	turtle.setheading(180-angle)
@@ -84,13 +84,14 @@ while(j<7):
 	turtle.circle(-98,30)
 	turtle.setheading(-10-angle)
 	turtle.fd(i)
-	i+=1
+	i+=3
 	list2=turtle.pos()
+	print(i)
 	print(list2)
 	turtle.setpos(list)
-	angle+=15
+	angle+=17
 	turtle.end_fill()
-	turtle.dot("black")
+	#turtle.dot("black")
 	j+=1
 
 turtle.end_fill()
