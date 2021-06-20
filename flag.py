@@ -1,5 +1,8 @@
 import turtle
-turtle.speed(10)
+
+#turtle.speed(10)
+turtle.fd(0)
+x=input("Press Enter to start")
 yellow_pos=(110,55)
 
 def draw_blue():
@@ -47,7 +50,7 @@ def draw_yellow_down():
 
 
 
-def draw_yello_left():
+def draw_yellow_right():
 	list2=turtle.pos()
 	angle=0
 	i=20
@@ -70,7 +73,7 @@ def draw_yello_left():
 		j+=1
 		
 
-def draw_yellow_right():
+def draw_yellow_left():
 	angle=0
 	turtle.color("red")
 	turtle.setpos(yellow_pos)
@@ -137,8 +140,8 @@ draw_blue()
 draw_red()
 draw_green()
 draw_yellow_down()	
-draw_yello_left()
 draw_yellow_right()
+draw_yellow_left()
 draw_yellow_middle()
 draw_pole()
 

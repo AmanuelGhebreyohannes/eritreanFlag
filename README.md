@@ -10,3 +10,4 @@ The steps to draw the flag are finishing:
 	3. the green section using draw_green()
 	4. the yellow section by finishing the down,left,right and middle section using their respective functions.
 	5. the pole is drawn using draw_pole()
+	
